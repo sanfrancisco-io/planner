@@ -11,3 +11,120 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.drag-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modals {
+  width: 50%;
+}
+.modals-section {
+  overflow-y: scroll;
+  border: 5px solid gray;
+  gap: 10px;
+  background-color: rgb(189, 193, 193);
+  margin: 10px;
+  height: 150px;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modals-info {
+  border: 5px solid gray;
+  background-color: rgb(189, 193, 193);
+  margin: 10px;
+  height: 150px;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modals-info-input {
+  width: 100px;
+}
+
+.modal-action {
+  border: 5px solid gray;
+  background-color: rgb(189, 193, 193);
+  margin: 10px;
+  height: 150px;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.icon-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.icon-section-wrapper {
+  border: 2px solid gray;
+  background-color: white;
+  padding: 5px;
+  height: 80px;
+  width: 80px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.board-wrapper {
+  width: 50%;
+  height: 100vh;
+  border: 2px solid rgb(171, 171, 171);
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(226, 226, 226);
+}
+
+.board-header {
+  background-color: black;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+.board-wrapper-playground {
+  height: 92%;
+  margin-top: 15px;
+  border: 2px solid gray;
+  border-radius: 4px;
+  display: grid;
+  padding: 5px;
+  grid-template-columns: repeat(
+    auto-fill,
+    [col-start] minmax(80px, 1fr) [col-end]
+  );
+  grid-template-rows: repeat(
+    auto-fill,
+    [col-start] minmax(80px, 1fr) [col-end]
+  );
+}
+
+.board-wrapper-playground-child {
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.board-icons {
+  height: 100%;
+  border: 2px solid gray;
+  background-color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
